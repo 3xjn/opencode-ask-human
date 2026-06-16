@@ -1,0 +1,46 @@
+{
+  "name": "opencode-ask-human",
+  "version": "0.1.0",
+  "description": "OpenCode plugin that encourages asking a human instead of guessing when using the question tool.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./server": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "ask-human",
+    "question"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "@opencode-ai/plugin": ">=1.17.7"
+  },
+  "devDependencies": {
+    "@opencode-ai/plugin": "^1.17.7",
+    "typescript": "^5.8.0"
+  },
+  "engines": {
+    "opencode": ">=1.17.7"
+  }
+}
