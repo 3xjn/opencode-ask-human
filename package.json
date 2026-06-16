@@ -32,7 +32,18 @@
     "ask-human",
     "question"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/3xjn/opencode-ask-human.git"
+  },
+  "homepage": "https://github.com/3xjn/opencode-ask-human#readme",
+  "bugs": {
+    "url": "https://github.com/3xjn/opencode-ask-human/issues"
+  },
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "peerDependencies": {
     "@opencode-ai/plugin": ">=1.17.7"
   },

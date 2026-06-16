@@ -18,7 +18,7 @@ An [OpenCode](https://opencode.ai) plugin that teaches agents to ask before they
 Copy and paste:
 
 ```bash
-opencode plugin --global "opencode-ask-human@git+https://github.com/3xjn/opencode-ask-human.git#main"
+opencode plugin --global opencode-ask-human
 ```
 
 This installs the plugin globally so it works across projects.
@@ -26,7 +26,7 @@ This installs the plugin globally so it works across projects.
 For project-only install, omit `--global`:
 
 ```bash
-opencode plugin "opencode-ask-human@git+https://github.com/3xjn/opencode-ask-human.git#main"
+opencode plugin opencode-ask-human
 ```
 
 ## Usage
@@ -45,7 +45,7 @@ Prefer editing config yourself? Add this to `opencode.json` or `opencode.jsonc`:
 {
   "$schema": "https://opencode.ai/config.json",
   "plugin": [
-    "opencode-ask-human@git+https://github.com/3xjn/opencode-ask-human.git#main"
+    "opencode-ask-human"
   ]
 }
 ```
